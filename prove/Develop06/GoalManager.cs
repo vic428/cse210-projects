@@ -9,7 +9,7 @@ public class GoalManager
     public void Start()
     {
         Console.WriteLine("Goal Manager started.");
-        // You could initialize goals here or load from file
+        //  initialize goals here 
     }
 
     public void DisplayPlayerInfo()
