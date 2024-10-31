@@ -1,25 +1,29 @@
+using System;
+
 public class EternalGoal : Goal
 {
-    public EternalGoal(string name, string description, int points)
-        : base(name, description, points) { }
+    public EternalGoal(string shortName, string description, int points) : base(shortName, description, points)
+    {
+
+    }
 
     public override void RecordEvent()
     {
-        Console.WriteLine($"{_shortName} event recorded! You earned {_points} points.");
+        Console.WriteLine($"Congratulations! You have earned {_points} points!");
     }
 
     public override bool IsComplete()
     {
-        return false; // Eternal goals are never complete
+        return false;
     }
-
     public override string GetDetailsString()
     {
-        return $"{_shortName}: {_description} - Points: {_points} (Eternal)";
+        return $"EternalGoal: {_shortName} Description: {_description} ---({_points} points awarded.)";
+    ;
     }
 
     public override string GetStringRepresentation()
     {
-        return $"{_shortName} - Eternal";
+        return $"EternalGoal: {_shortName}: {_description}: {_points}";
     }
 }

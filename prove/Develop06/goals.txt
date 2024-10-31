@@ -1,0 +1,3 @@
+Simple|read books|read books for 10 mins |100
+Eternal|study the scriptures|scripture study for 30 mins daily |100
+Checklist|attend the temple|attend the temple 3 times |1000|3|50
